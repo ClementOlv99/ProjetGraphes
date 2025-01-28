@@ -77,6 +77,7 @@ def distribution_degré(G):
     maxD = 0
     nb = G.number_of_nodes()
 
+
     for node in G.nodes():
         if G.degree(node) > maxD:
             maxD = G.degree(node)
@@ -123,12 +124,11 @@ def nbPlusCourtChemin(G):
 
 
 
-   
-        
-    
 
 
-G = CreerGraphe("topology_avg.csv")
+
+
+G = CreerGraphe("topology_avg.csv", 20000)
 affichage(G)
 print(distribution_degré(G))
 print(nbCliques(G))
